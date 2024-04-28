@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Item</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="editbox">
+    <h1>Edit Note</h1>
+    <form  class="editform" >
+        
+        <div>
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" >
+        </div>
+        <div>
+            <label for="description">Description:</label>
+            <input type="text" id="description" name="description" >
+        </div>
+        <button type="submit" id="save">Save Changes</button>
+    </form>
+</div>
+    <script>
+        const url = window.location.href;
+        const idIndex = url.lastIndexOf(':');
+        const userId = url.substring(idIndex + 1);
+        console.log(userId)
+            loaditem();
+         
+    async function loaditem(){
+        console.log("inside editdata function")
+        const res = await fetch(`/editdata/${userId}`);
+                const data = await res.json(); // Parse response as JSON
+                const ans = await JSON.parse(data);
+                const title = document.getElementById("title")
+                const description = document.getElementById("description")
+                title.value = ans.title;
+                description.value = ans.description
+    }
+    document.getElementById("save").addEventListener('click',(e)=>{
+        e.preventDefault();
+        const tit = document.getElementById('title').value;
+        const desc = document.getElementById('description').value;
+        console.log(tit)
+        console.log(desc)
+        fetch('/update',{
+                method:'PATCH',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                body:JSON.stringify({
+                    Itemid:userId,
+                    title: tit,
+                    description: desc
+
+                })
+            })
+            window.location.href = '/';
+            
+           
+    })
+    
+        
+    
+    </script>
+</body>
+</html>

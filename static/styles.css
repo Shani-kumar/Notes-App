@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(242, 241, 237);
+}
+.navbar{
+    background-color: black;
+    color: white;
+}
+#items{
+    text-align: center;
+    border-radius: 10px;
+    background-color: #433f3f; 
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.inputdata{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+   border: 1px solid rgb(205, 200, 200);
+   border-radius: 10px;
+    background-color:#f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.form-control{
+    overflow: hidden;
+    border: 0.5px solid 1px solid #ccc;
+    background-color:white;
+}
+#add{
+    width: 100%;
+}
+/* Custom CSS */
+.btn-success {
+    background-color: #28a745; /* Change to your desired color */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Change to your desired hover color */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.editbox {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editbox h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.editform div {
+    margin-bottom: 20px;
+}
+
+.editform label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.editform input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.editform button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editform button[type="submit"]:hover {
+    background-color: #45a049;
+}
+/* Global Styles */
+/* Global Styles */
+/* Global Styles */
+
+
+
+
