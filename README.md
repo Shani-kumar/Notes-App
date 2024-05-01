@@ -1,6 +1,6 @@
-# My Awesome Project
+# Notes App
 
-Welcome to my project! Below is the deployment link:
+Welcome to Notes App Below is the deployment link:
 
 <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
   <h3 style="margin-top: 0;">🌟 Check out the live deployment:</h3>
